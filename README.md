@@ -24,5 +24,5 @@ This project allows you to control various functions on your devices using an IR
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/ir-remote-control-arduino.git
+   git clone https://github.com/huszerldani/ir-remote-control-arduino.git
    cd ir-remote-control-arduino
