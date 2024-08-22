@@ -6,8 +6,8 @@ enum Key {
     KEY_UP = 0x60,
     KEY_DOWN = 0x61,
     KEY_LEFT = 0x65,
-    KEY_RIGHT = 0x65,
-    KEY_OK = 0x65,
+    KEY_RIGHT = 0x62,
+    KEY_OK = 0x68,
     KEY_BACK = 0x58,
     KEY_HOME = 0x79,
     KEY_SETTINGS = 0x1A,
@@ -118,9 +118,9 @@ void loop() {
 }
 
 // Function to send a key via IR
-void sendKey(Key key, int repeat = 1) {
-  IrSender.sendSamsung(0x7, key, repeat);
-  delay(100);  // Small delay between key presses
+void sendKey(Key key) {
+  IrSender.sendSamsung(0x7, key, 1);
+  delay(200);  // Small delay between key presses
 }
 
 // Function to execute a shortcut by sending a sequence of keys
